@@ -43,7 +43,42 @@
 }
 
 #tweets footer p {
-  text-align: left;
+  float: left;
   margin: 0px;
   padding: 15px 10px;
 }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#tweets .fa-heart {
+  float: right;
+  line-height: 50px;
+  margin-right: 5px;
+}
+
+#tweets .fa-retweet {
+  float: right;
+  line-height: 50px;
+  margin-right: 5px;
+}
+
+#tweets .fa-flag {
+  float: right;
+  line-height: 50px;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
