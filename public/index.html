@@ -19,11 +19,10 @@
     <!-- App New Tweet CSS -->
     <link rel="stylesheet" type="text/css" href="/styles/new-tweet.css">
 
-    <!-- External JS -->
-    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <!-- App Tweets CSS -->
+    <link rel="stylesheet" type="text/css" href="/styles/tweets.css">
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
+
   </head>
 
   <body>
@@ -44,7 +43,36 @@
           <span class="counter">140</span>
         </form>
       </section>
+      <section id="tweets">
+        <article>
+          <header>
+            <img class="avatar" src="/images/user1.png">
+            <h3>Bill Fields</h3>
+            <p>@MrFields</p>
+            
+          </header>
+
+          <p class="tweet-body">
+            Little tweet here
+          </p>
+
+          <footer>
+            <p>10 days ago</p>
+            
+          </footer>
+        </article>
+        
+      </section>
     </main>
+
+    <!-- External JS -->
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/app.js"></script>
+
+    <!-- Char-Counter JS -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
   </body>
 </html>

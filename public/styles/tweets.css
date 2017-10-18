@@ -1,0 +1,49 @@
+#tweets {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-color: #bfbfbf;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+#tweets .avatar {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: 10px;
+  border-radius: 5px;
+  
+}
+
+#tweets header {
+  background-color: #e6e6e6;
+  height: 70px;
+}
+
+#tweets header h3 {
+  margin: 0px;
+  float:left;
+  line-height: 70px;
+  color: #666666;
+}
+
+#tweets header p {
+  margin: 0px;
+  float: right;
+  line-height: 70px;
+  margin-right: 10px;
+  color: #999999;
+}
+
+#tweets .tweet-body {
+  text-align: left;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 40px 10px;
+  margin: 0px;
+}
+
+#tweets footer p {
+  text-align: left;
+  margin: 0px;
+  padding: 15px 10px;
+}
