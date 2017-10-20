@@ -54,11 +54,11 @@ function renderTweets(data) {
 //=====================================================================================================================================
 
 $("#compose").click(function(){
-  if ($(".new-tweet").is(":hidden")) {
+  if ($(".new-tweet").is(":hidden")) { // if it's up, slide down, then focus on textarea
     $(".new-tweet").slideDown("slow");
     $(".new-tweet").find("textarea").focus();
     } else {
-     $(".new-tweet").find("textarea").focusout(); 
+     $(".new-tweet").find("textarea").focusout(); // if it's down, focus out, then slide up
      $(".new-tweet").slideUp("slow");
     }
 });
@@ -99,12 +99,12 @@ $(".new-tweet form").submit(function (event) {
     method: 'POST',
     data: data,
     success: function (response) {
-      // let arr = []
-      // arr.push(response)
-      // instead of above: put the object into brackets:
-      renderTweets([response])
+      // let arr = []; arr.push(response); renderTweets(arr)
+      renderTweets([response]) //instead of above: put the object into brackets
     }
     });
+    this.reset(); // Resets the textarea
+    $(".counter").text(140) // Resets the character counter to 140
     }
 });
 
