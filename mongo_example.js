@@ -14,14 +14,6 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
 
   // ==> Refactored and wrapped as new, tweet-specific function:
 
-  // function getTweets(callback) {
-  //   db.collection("tweets").find().toArray((err, tweets) => {
-  //     if (err) {
-  //       return callback(err);
-  //     }
-  //     callback(null, tweets);
-  //   });
-  // }
 
 
 
