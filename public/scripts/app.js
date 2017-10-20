@@ -49,9 +49,19 @@ function renderTweets(data) {
 };
 
 
+//=====================================================================================================================================
+// Form toggle and auto selecting the textarea
+//=====================================================================================================================================
 
-
-
+$("#compose").click(function(){
+  if ($(".new-tweet").is(":hidden")) {
+    $(".new-tweet").slideDown("slow");
+    $(".new-tweet").find("textarea").focus();
+    } else {
+     $(".new-tweet").find("textarea").focusout(); 
+     $(".new-tweet").slideUp("slow");
+    }
+});
 
 //=====================================================================================================================================
 // Recieving the tweet text from the server
