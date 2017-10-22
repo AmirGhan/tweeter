@@ -45,7 +45,7 @@ function renderTweets(data) {
   data.forEach(function(tweetData) {
     const section = createTweetElement(tweetData);
     $container.prepend(section);
- })
+ });
 };
 
 
@@ -66,6 +66,7 @@ $("#compose").click(function(){
 //=====================================================================================================================================
 // Recieving the tweet text from the server
 //=====================================================================================================================================
+
 function loadTweets () {
   $.ajax({
   url: '/tweets',
@@ -83,6 +84,7 @@ loadTweets();
 //=====================================================================================================================================
 // Sending the tweet text to the server
 //=====================================================================================================================================
+
 $(".new-tweet form").submit(function (event) {
   event.preventDefault();
   var data = $(this).serialize();
@@ -100,11 +102,11 @@ $(".new-tweet form").submit(function (event) {
     data: data,
     success: function (response) {
       // let arr = []; arr.push(response); renderTweets(arr)
-      renderTweets([response]) //instead of above: put the object into brackets
+      renderTweets([response]); //instead of above: put the object into brackets
     }
     });
     this.reset(); // Resets the textarea
-    $(".counter").text(140) // Resets the character counter to 140
+    $(".counter").text(140); // Resets the character counter to 140
     }
 });
 
